@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ny artikkel</title>
+    <link rel="stylesheet" type="text/css" href="./css/stylesheet.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="./image/exercise1.jpg"
+        alt="Hoved Logo"
+        width="300"
+        height="150"
+      />
+      <nav class="navbar">
+        <ul>
+          <li><a href="hovedSide.html">Hjem</a></li>
+          <li><a href="omOss.html">Om oss</a></li>
+          <li><a href="nyArtikkel.html">Ny Artikkel</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Ny Artikkel</h1>
+
+      <form action="process.php">
+        <div id="artikkelform" class="container">
+          <div><label for="artikelnavn">Name of the article</label></div>
+          <input type="text" id="articlename" placeholder="type the name" />
+          <div>
+            <label for="Article description">Description</label><br />
+            <textarea name="description" id="description" cols="30" rows="10">
+            </textarea>
+          </div>
+          <!--lastopp fil-->
+          <div>
+            <label for="fil">last opp</label>
+            <input
+              type="file"
+              name="fil"
+              id="fil"
+              accept="image/png, image/jpeg, image/gif"
+            />
+          </div>
+          <br />
+          <!--save button-->
+          <label for="Save"></label>
+          <input type="submit" value="Save" />
+          <br />
+        </div>
+      </form>
+    </main>
+
+    <footer>&copy;ArtDesign AS 2019</footer>
+  </body>
+</html>
